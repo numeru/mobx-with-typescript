@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useStoreContext } from "contexts/store-context";
+import { observer } from "mobx-react";
 
-function App() {
+export default observer(() => {
+  const { movieStore } = useStoreContext();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <section>
+        {movieStore.movies.map((movie, idx) => {
+          return (
+            <div key={idx}>
+              <p>{movie.id}</p>
+              <p>{movie.title}</p>
+              <p>{movie.rate}</p>
+            </div>
+          );
+        })}
+      </section>
+      <button onClick={() => movieStore.changeRate()}>
+        first movie rate +1
+      </button>
     </div>
   );
-}
-
-export default App;
+});
