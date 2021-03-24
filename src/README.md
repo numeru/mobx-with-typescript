@@ -76,7 +76,7 @@ export default CountStore;
 
 2. root store 생성
 
-- 이 곳에 모든 store을 모아둔다.
+- 이 곳에 모든 store를 모아둔다.
 
 ```ts
 export class RootStore {
