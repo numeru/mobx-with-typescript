@@ -4,10 +4,10 @@
 
 # 목차
 
-- [설치]()
-- [요소]()
-- [예제 코드]()
-- [그 외]()
+- [설치](https://github.com/numeru/mobx-with-typescript/tree/main/src#%EC%84%A4%EC%B9%98)
+- [요소](https://github.com/numeru/mobx-with-typescript/tree/main/src#%EC%9A%94%EC%86%8C)
+- [과정](https://github.com/numeru/mobx-with-typescript/tree/main/src#%EC%98%88%EC%A0%9C-%EC%BD%94%EB%93%9C)
+- [그 외](https://github.com/numeru/mobx-with-typescript/tree/main/src#%EC%98%88%EC%A0%9C-%EC%BD%94%EB%93%9C)
 
 ---
 
@@ -128,7 +128,7 @@ dispose() {
 
 ---
 
-## 예제 코드
+## 과정
 
 ### import
 
